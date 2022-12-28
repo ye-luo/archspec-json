@@ -2480,6 +2480,42 @@
           ]
       }
     },
+    "cortex_a76": {
+      "from": ["armv8.2a"],
+      "vendor": "ARM",
+      "features": [
+          "fp",
+          "asimd",
+          "evtstrm",
+          "aes",
+          "pmull",
+          "sha1",
+          "sha2",
+          "crc32",
+          "atomics",
+          "fphp",
+          "asimdhp",
+          "cpuid",
+          "asimdrdm",
+          "lrcpc",
+          "dcpop",
+          "asimddp"
+      ],
+      "compilers" : {
+          "gcc": [
+              {
+                  "versions": "9:",
+                  "flags" : "-mcpu=cortex-a76"
+              }
+          ],
+          "clang" : [
+              {
+                  "versions": "9:",
+                  "flags" : "-mcpu=cortex-a76"
+              }
+          ]
+      }
+    },
     "neoverse_n1": {
       "from": ["cortex_a72", "armv8.2a"],
       "vendor": "ARM",
